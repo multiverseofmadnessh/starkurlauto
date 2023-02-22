@@ -1,12 +1,13 @@
-FROM python:3.10-slim-buster
+FROM python:3.10
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+WORKDIR /multiverseofmadnessh
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /LazyPrincessV2
-WORKDIR /LazyPrincessV2
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+
+COPY requirements.txt /
+
+
+RUN pip3 -r requirements.txt
+
+copy . .
+
+CMD ["python3", "bot.oy"]
