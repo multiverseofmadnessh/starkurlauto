@@ -6,7 +6,7 @@ WORKDIR /multiverseofmadnessh
 COPY requirements.txt /
 
 
-RUN pip3 -r requirements.txt
+RUN pip install -r requirements.txt
 
 copy . .
 
