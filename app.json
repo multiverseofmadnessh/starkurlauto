@@ -25,11 +25,11 @@
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "required": true
+            "required": false
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "required": true
+            "required": false
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
@@ -45,7 +45,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
-            "required": true
+            "required": false
         },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
