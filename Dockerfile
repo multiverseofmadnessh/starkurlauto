@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 copy . .
 
-CMD ["python3", "bot.oy"]
+CMD ["python3", "bot.py"]
